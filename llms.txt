@@ -1,0 +1,28 @@
+# Australian Business Startup
+
+> Free plain-English guides and a newsletter for people starting and running small businesses in Australia, plus an 80,000+ member Facebook group. Operated by Enviga Pty Ltd (ABN 43 115 695 568). General information, not legal, financial or tax advice.
+
+Australian Business Startup (https://australianbusinessstartup.com.au/) is a free resource for Australian founders. The Facebook group started in December 2015: https://www.facebook.com/groups/AusBusStart. The website publishes guides that link to official sources (business.gov.au, the Australian Business Register, ASIC, the ATO) and a public summary of scams aimed at new businesses. The longer Scam Watch guide is emailed to newsletter subscribers and is not the public page.
+
+Contact: admin@australianbusinessstartup.com.au. Post: PO Box 58, Burleigh Heads QLD 4220, Australia.
+
+Figures on the guides were checked in October 2026. Fees are indexed and grant rounds change, so quote the linked government page for the current amount.
+
+## Key pages
+
+- [Home](https://australianbusinessstartup.com.au/): Start-a-business guides, the newsletter, and the free Scam Watch offer.
+- [About](https://australianbusinessstartup.com.au/about.html): Who runs the site and the Facebook group, and how to contact them.
+- [Guides](https://australianbusinessstartup.com.au/guides/): Index of the practical Australian start-up guides.
+- [How to start a business in Australia](https://australianbusinessstartup.com.au/guides/how-to-start-a-business-in-australia.html): The usual order of steps, from structure and ABN to tax, licences and records.
+- [How to apply for an ABN](https://australianbusinessstartup.com.au/guides/how-to-apply-for-an-abn.html): The 11-digit Australian Business Number is free to register and is not a yearly renewal.
+- [How to register a business name](https://australianbusinessstartup.com.au/guides/register-a-business-name.html): When ASIC requires a business name, and the published fee.
+- [Sole trader, partnership or company](https://australianbusinessstartup.com.au/guides/sole-trader-partnership-or-company.html): How the three common structures differ on tax, liability and fees.
+- [Small business grants and support](https://australianbusinessstartup.com.au/guides/small-business-grants-australia.html): Where to look for free grant information, and how to spot grant scams.
+- [GST registration basics](https://australianbusinessstartup.com.au/guides/gst-registration-basics.html): The 10% tax, the $75,000 turnover threshold, and who must register sooner.
+- [Scam Watch summary](https://australianbusinessstartup.com.au/scam-watch-summary.html): Short public notes on the scams that target new Australian businesses, and where to report them.
+- [Tools we recommend](https://australianbusinessstartup.com.au/tools.html): Official registers and a few labelled tools. Some links are affiliate links.
+- [Privacy policy](https://australianbusinessstartup.com.au/privacy.html): What the newsletter form collects (first name, email, and optional state).
+
+## Optional
+
+- [Longer summaries](https://australianbusinessstartup.com.au/llms-full.txt): The same pages, with the key facts written out.

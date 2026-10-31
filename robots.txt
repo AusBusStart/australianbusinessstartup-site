@@ -1,4 +1,32 @@
+# Search and AI crawlers may read the public pages.
+# scam-watch.html stays noindex in its own meta tag so the full guide is not an indexed result.
+# The public summary is /scam-watch-summary.html.
+
 User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://australianbusinessstartup.com.au/sitemap.xml
