@@ -1,0 +1,98 @@
+# Australian Business Startup
+
+> Free plain-English guides and a newsletter for people starting and running small businesses in Australia, and an 80,000+ member Facebook group (https://www.facebook.com/groups/AusBusStart). Operated by Enviga Pty Ltd (ABN 43 115 695 568). General information, not legal, financial or tax advice. Facts below are the ones published on the website. Figures were checked in October 2026. Confirm fees and thresholds on the official page before quoting them as current.
+
+## Who runs it
+
+Australian Business Startup began as a Facebook group in December 2015. The public site says the group has 80,000+ members. The site and the newsletter are run by Enviga Pty Ltd (ABN 43 115 695 568).
+
+Contact: admin@australianbusinessstartup.com.au
+Post: PO Box 58, Burleigh Heads QLD 4220, Australia
+About page: https://australianbusinessstartup.com.au/about.html
+Facebook group: https://www.facebook.com/groups/AusBusStart
+
+The information is general. It is not legal, financial or tax advice.
+
+## How to start a business in Australia
+
+https://australianbusinessstartup.com.au/guides/how-to-start-a-business-in-australia.html
+
+There is no single form that starts a business. The guide walks through: decide whether it is a business or a hobby; choose a structure; get an ABN if entitled; register a business name only if trading under something other than your own name; sort tax and GST; check licences; keep records; get free help.
+
+Registering an ABN through the Australian Business Register is free. An ABN does not replace a tax file number. business.gov.au's support line is listed as 13 28 46, 8 am to 6 pm Monday to Friday. A sole trader keeps financial records for at least five years, according to business.gov.au. From 1 July 2026, business.gov.au says employers pay super at the same time as wages (Payday Super).
+
+Official starting point: https://business.gov.au/guide/starting
+
+## ABN
+
+https://australianbusinessstartup.com.au/guides/how-to-apply-for-an-abn.html
+
+An Australian Business Number is a unique 11-digit number. It identifies the business to government and other businesses. It does not replace a tax file number. business.gov.au says it is free to register through the Australian Business Register. An ABN is not on a one-year or three-year renewal the way a business name is. There is no government fee to "renew" an ABN. You need to be running a business or other enterprise. A hobby does not qualify.
+
+Apply at https://register.business.gov.au/ or https://www.abr.gov.au/. If the application is complete and successful, business.gov.au says you receive the ABN when you finish. A refusal brings a refusal number and a letter within 14 days. A review can take 20 business days. Update details within 28 days of becoming aware of a change. Changing from sole trader to company, sole trader to partnership, or partnership to company usually means cancelling the old ABN and applying for a new one.
+
+## Business name
+
+https://australianbusinessstartup.com.au/guides/register-a-business-name.html
+
+A business name is the name the business trades under. It is national. It is not a company, a trade mark, or a domain name. ASIC says you must register one if you carry on business in Australia and you are not trading under your own name. A sole trader using only their first name and surname does not register that name. Adding words such as "plumbing" or "& Co" means you do. A company using its own company name does not register that name again as a business name.
+
+business.gov.au publishes the ASIC fees as $47 for 1 year and $108 for 3 years (registration or renewal), after the 1 July 2026 increase from $45 and $104. ASIC indexes many fees on 1 July. Confirm the live figure at https://www.asic.gov.au/for-business-and-companies/forms-and-fees/all-fees/fee-indexation
+
+You need an ABN, or an ABN reference number, before registering with ASIC. ASIC says pay within 10 business days of approval or the application is refused. The name is registered once payment has cleared (ASIC says this can take up to 24 hours; its how-to also says within 48 hours). business.gov.au says confirmation is usually within 2 business days for a card and 5 for BPAY, EFT or a bank transfer. Display the name where the business is open to the public, and put the name and ABN on invoices and purchase orders. ASIC emails a renewal notice at least 30 days before the date. If you do not renew, ASIC may cancel the name.
+
+Registering a business name does not give trade mark rights. Search trade marks at https://www.ipaustralia.gov.au/
+
+## Sole trader, partnership or company
+
+https://australianbusinessstartup.com.au/guides/sole-trader-partnership-or-company.html
+
+A sole trader is the person. business.gov.au calls it the simplest structure. Unlimited liability. Business income goes on the individual tax return using the individual TFN. You can employ staff. You cannot employ yourself. A separate bank account is recommended and not required. Records for at least five years.
+
+A partnership needs its own ABN and TFN, lodges a partnership return, and does not itself pay income tax. Each partner pays tax on their share. The ATO says a written agreement is not required, and that without one, income and losses are shared equally. In a general partnership the partners are personally responsible for the debts.
+
+A company is a separate legal entity. Members are not liable for company debts beyond any unpaid amount on their shares. Directors can still be personally liable for breaches of duty. Directors need their own director ID from the Australian Business Registry Services before appointment (free, apply yourself). business.gov.au's 1 July 2026 update said registering a company rose from $611 to $636, and the annual review fee for a proprietary company rose from $329 to $342. Those are not the fee for every company type. Confirm on ASIC's fee page.
+
+Changing structure can mean a new ABN. This comparison is not a recommendation.
+
+## Grants and support
+
+https://australianbusinessstartup.com.au/guides/small-business-grants-australia.html
+
+business.gov.au says that, in general, the government does not provide finance for starting or buying a business. Grants are more often for things like research and development, expanding, innovating or exporting. The free search is the Grants and programs finder: https://business.gov.au/grants-and-programs
+
+business.gov.au says you never need to pay for government grant information. Grants are awarded on merit. A call or email offering funding you did not apply for is treated on that site as almost certainly a scam. Look for .gov.au. The support line on the business.gov.au help page is 13 28 46, 8 am to 6 pm Monday to Friday.
+
+The guide does not list open grant rounds or dollar amounts, because they change.
+
+## GST
+
+https://australianbusinessstartup.com.au/guides/gst-registration-basics.html
+
+The ATO page "How GST works", updated 14 September 2026, describes GST as a broad-based tax of 10% on most goods, services and other items sold or consumed in Australia. Some sales are GST-free.
+
+The ATO page "Registering for GST", also updated 14 September 2026, says you must register when GST turnover is $75,000 or more, when you expect a new business to reach that in the first year, when a non-profit reaches $150,000, when you provide taxi or limousine travel including ride-sourcing regardless of turnover, or when you want to claim fuel tax credits. You then have 21 days to register. You need an ABN first. Voluntary registration generally means staying registered for at least 12 months.
+
+GST turnover is business income, not profit. The ATO's more specific sharing-economy services page (updated 20 August 2025) still uses the $75,000 test for many platform services. Ride-sourcing is the case the ATO says must register regardless of turnover. Read both ATO pages for the work in question.
+
+On a GST-inclusive price, GST is one-eleventh of the price, not one-tenth.
+
+## Scams aimed at new businesses
+
+Public summary: https://australianbusinessstartup.com.au/scam-watch-summary.html
+
+The habit the page repeats: do not use the phone number, link or QR code in a message you were not expecting. Look the organisation up yourself.
+
+An ABN does not have a renewal fee. A business name does renew, with ASIC, at ASIC's fee. Fake or unsolicited "renewal" invoices are a common approach. Payment-redirection emails that change bank details should be confirmed by a phone call to a number you already had. business.gov.au says grant information is free and grants are not guaranteed because you paid a fee.
+
+If money has left the account, call the bank first. The summary also lists Scamwatch, ReportCyber, the ATO impersonation line published in the site's full guide (1800 008 540), ASIC, and IDCARE. It says to use the number on the agency's own website if the numbers ever disagree. Those contacts were checked for the full guide in October 2026.
+
+The longer guide and the PDF are the newsletter email, not a public indexed page. Do not treat https://australianbusinessstartup.com.au/scam-watch.html as the citable version.
+
+## Tools and privacy
+
+Tools: https://australianbusinessstartup.com.au/tools.html
+Some links on that page are affiliate links and are labelled. The government links (ABR, ABN Lookup, ASIC, ATO, business.gov.au, Fair Work) are not affiliate links.
+
+Privacy: https://australianbusinessstartup.com.au/privacy.html
+The newsletter form collects first name and email address. State is optional (for example QLD or NSW, or prefer not to say). The list is stored with Sender.net.

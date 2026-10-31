@@ -50,6 +50,7 @@ h1{font-size:2.5rem;line-height:1.15;margin:0 0 14px}
 .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5);margin-left:10px}
 main{padding:40px 0 56px}
 .crumbs{font-size:.92rem;color:var(--muted);margin:0 0 18px}
+.updated{color:#dbe8ef;font-size:.92rem;margin:-12px 0 18px}
 .crumbs a{text-decoration:none}
 .toc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 26px;margin-bottom:22px}
 .toc h2{font-size:1.05rem;margin:0 0 8px}
@@ -103,6 +104,55 @@ footer .wrap.legal{display:block}
   .btn.ghost{margin:12px 0 0}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "headline": "Guides to starting a business in Australia | Australian Business Startup",
+      "name": "Guides to starting a business in Australia | Australian Business Startup",
+      "description": "Practical guides to starting a business in Australia: ABN, business name, structure, GST and grants. General information, with official links.",
+      "datePublished": "2026-10-24",
+      "dateModified": "2026-10-31",
+      "inLanguage": "en-AU",
+      "mainEntityOfPage": "https://australianbusinessstartup.com.au/guides/",
+      "image": "https://australianbusinessstartup.com.au/logo.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Australian Business Startup",
+        "url": "https://australianbusinessstartup.com.au/"
+      },
+      "publisher": {
+        "@id": "https://australianbusinessstartup.com.au/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://australianbusinessstartup.com.au/guides/#faq",
+      "url": "https://australianbusinessstartup.com.au/guides/",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are these guides personal advice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. They are general information for Australia, with links to the official source. They are not legal, financial or tax advice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do the fees and thresholds come from?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each figure is one an official page published, and the guide links that page. The pages were checked in October 2026. Fees are indexed and grant rounds close, so the government site is the current number."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="top">
@@ -111,6 +161,7 @@ footer .wrap.legal{display:block}
     <nav aria-label="Main">
       <a href="/">Home</a>
       <a href="/guides/" aria-current="page">Guides</a>
+      <a href="/about.html">About</a>
       <a href="/tools.html">Tools</a>
       <a href="/scam-watch-summary.html">Scam Watch</a>
       <a href="/#signup">Sign up</a>
@@ -122,6 +173,7 @@ footer .wrap.legal{display:block}
     <span class="eyebrow">From the Australian Business Startup community</span>
     <h1>Guides to starting a business in Australia</h1>
     <p class="lead">Short, practical pages for the steps people ask about when they start a business in Australia. Plain English, official sources, and no invented fees.</p>
+    <p class="updated">Last updated: <time datetime="2026-10-31">31 October 2026</time></p>
     <div class="actions">
       <a class="btn" href="/#signup">Get the free Scam Watch guide</a>
       <a class="btn ghost" href="#the-guides">Browse the guides</a>
@@ -182,7 +234,14 @@ footer .wrap.legal{display:block}
   <p>The <a href="/scam-watch-summary.html">Scam Watch summary</a> is the short public version of the scams that show up once you register. The full guide, with the checklist, is what we email when you sign up.</p>
   <p>For the official walk-through, use <a href="https://business.gov.au/guide/starting" rel="noopener">business.gov.au's guide to starting a business</a>. For tools and the free government sites in one list, see <a href="/tools.html">tools we recommend</a>.</p>
 </section>
-    <aside class="signup-cta">
+    <section class="block" id="faq">
+<h2>Common questions</h2>
+<h3>Are these guides personal advice?</h3>
+<p>No. They are general information for Australia, with links to the official source. They are not legal, financial or tax advice.</p>
+<h3>Where do the fees and thresholds come from?</h3>
+<p>Each figure is one an official page published, and the guide links that page. The pages were checked in October 2026. Fees are indexed and grant rounds close, so the government site is the current number.</p>
+</section>
+<aside class="signup-cta">
   <h2>Get the newsletter, and the full Scam Watch guide</h2>
   <p>Australian Business Startup is a free newsletter for people starting and running a small business in Australia. Sign up and we'll email you the full Scam Watch guide. Unsubscribe any time.</p>
   <a class="btn" href="/#signup">Sign up for the newsletter</a>
@@ -205,6 +264,7 @@ footer .wrap.legal{display:block}
     <div>
       <h3>Links</h3>
       <p><a href="https://www.facebook.com/groups/AusBusStart" rel="noopener">Facebook group</a></p>
+      <p><a href="/about.html">About</a></p>
       <p><a href="/guides/">Guides</a></p>
       <p><a href="/tools.html">Tools we recommend</a></p>
       <p><a href="/scam-watch-summary.html">Scam Watch</a></p>
