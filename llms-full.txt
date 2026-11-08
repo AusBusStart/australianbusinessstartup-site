@@ -107,7 +107,7 @@ Example reach from single posts, not a guarantee: the group welcome post reached
 
 Every paid post is labelled "Sponsored". Sponsored posts are limited to a few a week. Scams, get-rich-quick offers and misleading claims are not accepted, and any ad can be declined. About a week after a post goes up, the advertiser is emailed its reach, reactions, comments and link clicks.
 
-Pay now for a single post with the PayPal link on the advertise page, then email admin@australianbusinessstartup.com.au with what you'd like to promote and your preferred dates. Questions, and monthly Bronze, Silver and Gold sponsorship, are by email. There are no calls.
+For a single post, choose Buy now, fill in the form (name, email, business name, post copy and preferred dates) and agree to the conditions, then pay with PayPal. The form is emailed to admin@australianbusinessstartup.com.au. The post is reviewed against the group rules before it goes live. Preferred dates are a request, not a guarantee. If the post cannot be run, the amount paid is refunded in full. Questions, and monthly Bronze, Silver and Gold sponsorship, are by email. There are no calls.
 
 ## Tools and privacy
 
@@ -115,4 +115,4 @@ Tools: https://australianbusinessstartup.com.au/tools.html
 Some links on that page are affiliate links and are labelled. The government links (ABR, ABN Lookup, ASIC, ATO, business.gov.au, Fair Work) are not affiliate links.
 
 Privacy: https://australianbusinessstartup.com.au/privacy.html
-The newsletter form collects first name and email address. State is optional (for example QLD or NSW, or prefer not to say). The list is stored with Sender.net.
+The newsletter form collects first name and email address. State is optional (for example QLD or NSW, or prefer not to say). The list is stored with Sender.net. The advertising booking form collects name, email, business name, post copy and preferred dates, and emails them to the admin address. Payment details are not collected on the website.
