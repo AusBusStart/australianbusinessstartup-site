@@ -120,7 +120,7 @@
           "name": "How do I pay?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Choose Buy now on a single post. Fill in your name, email, business name, the post copy and your preferred dates, and agree to the conditions. Then you pay with PayPal. We'll review the post against the group rules before it goes live. Preferred dates are a request, not a guarantee. If we can't run the post, you'll get a full refund of what you paid. For a question, or for monthly Bronze, Silver or Gold sponsorship, email us. We don't take calls."
+            "text": "Choose Buy now on a single post. Fill in your name, email, business name, the post copy and your preferred dates, and agree to the conditions. Pay now emails the form to us, then you pay with PayPal. Send for review first emails the form to us and does not take you to pay. We'll review the post against the group rules and email you if it's approved, with how to pay. If we can't run it, we'll let you know and you won't be charged. Preferred dates are a request, not a guarantee. If you've already paid and we can't run the post, you'll get a full refund of what you paid. For a question, or for monthly Bronze, Silver or Gold sponsorship, email us. We don't take calls."
           }
         },
         {
@@ -197,9 +197,12 @@ button.btn:disabled{opacity:.7;cursor:default}
 .booking .agree{display:flex;gap:10px;align-items:flex-start;font-weight:600;margin:14px 0 0}
 .booking .agree input{width:auto;margin-top:5px;flex:none}
 .booking .form-error{color:#7a2430;background:#fdecee;border-radius:10px;padding:10px 12px;margin:14px 0 0}
-.booking .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.booking .btn.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}
+.booking .choices{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.booking .choices .btn{width:100%;text-align:center}
+.booking .choice-note{color:var(--muted);font-size:.88rem;font-weight:400;margin:8px 0 0}
+.booking .text-cancel{background:none;border:0;color:var(--navy);font:inherit;font-weight:600;cursor:pointer;padding:10px 0 0}
 .booking .fine{color:var(--muted);font-size:.88rem;margin:14px 0 0;overflow-wrap:anywhere}
+.booking .thanks h2{margin-bottom:12px}
 .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
 .disclaimer{font-size:.88rem;color:var(--muted);padding:0 4px}
 footer{background:#0f1c24;color:#b7c4cc;padding:40px 0;font-size:.92rem}
@@ -221,8 +224,7 @@ footer .wrap.legal{display:block}
   section h2{font-size:1.25rem}
   .btn{display:block;text-align:center}
   .booking{padding:22px 18px}
-  .booking .actions{flex-direction:column}
-  .booking .actions .btn{width:100%}
+  .booking .choices{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -244,7 +246,7 @@ footer .wrap.legal{display:block}
   <div class="wrap narrow">
     <span class="eyebrow">Facebook group, website and newsletter</span>
     <h1>Advertise with us</h1>
-    <p class="lead">A straightforward way to reach Australian small business owners, founders and freelancers. Prices are inc GST. For a single post, choose Buy now, fill in the form and agree to the conditions, then pay with PayPal.</p>
+    <p class="lead">A straightforward way to reach Australian small business owners, founders and freelancers. Prices are inc GST. For a single post, choose Buy now, fill in the form and agree to the conditions. You can pay with PayPal, or send the post for review first.</p>
     <p class="updated">Last updated <time datetime="2026-11-08">8 November 2026</time></p>
   </div>
 </div>
@@ -260,8 +262,8 @@ footer .wrap.legal{display:block}
 
     <section class="block" id="options">
       <h2>What you can book</h2>
-      <p>Every price below is inc GST. Choose Buy now, fill in the short form and agree to the conditions, then pay with PayPal.</p>
-      <noscript><p>To book a single post, turn JavaScript on. The form emails us your details and then takes you to PayPal.</p></noscript>
+      <p>Every price below is inc GST. Choose Buy now, fill in the short form and agree to the conditions. You can pay with PayPal, or send the post for review first.</p>
+      <noscript><p>To book a single post, turn JavaScript on. The form emails us your details. You can then pay with PayPal, or send the post for review first.</p></noscript>
       <div class="cards">
         <article class="card">
           <h3>Sponsored post in the group <span class="price">$50 inc GST</span></h3>
@@ -314,7 +316,7 @@ footer .wrap.legal{display:block}
 
     <section class="block" id="book">
       <h2>How to book</h2>
-      <p>For a single post, choose Buy now. Fill in your name, email, business name, the post copy and your preferred dates, and agree to the conditions. We email that form to ourselves, then you pay with PayPal. Paying does not put the post live. We'll review it against the group rules first. The dates you ask for are a request, not a guarantee. If we can't run the post, you'll get a full refund of what you paid.</p>
+      <p>For a single post, choose Buy now. Fill in your name, email, business name, the post copy and your preferred dates, and agree to the conditions. You can then choose Pay now or Send for review first. Pay now emails the form to us, then takes you to PayPal. Send for review first emails the form to us and does not take you to pay. We'll review the post against the group rules and email you if it's approved, with how to pay. If we can't run it, we'll let you know and you won't be charged. Preferred dates are a request, not a guarantee. If you've already paid and we can't run the post, you'll get a full refund of what you paid.</p>
       <p>For a question, or for a monthly Bronze, Silver or Gold sponsorship, email <a href="mailto:admin@australianbusinessstartup.com.au?subject=Advertising%20enquiry">admin@australianbusinessstartup.com.au</a>. We'll send you what's included and the prices for a monthly package. We don't take calls.</p>
       <p><a class="btn" href="mailto:admin@australianbusinessstartup.com.au?subject=Advertising%20enquiry">Email us about advertising</a></p>
     </section>
@@ -328,7 +330,7 @@ footer .wrap.legal{display:block}
       <h3>Do you guarantee results?</h3>
       <p>No. Reach, reactions and comments vary from post to post. The numbers on this page are examples from single posts, not a promise of what your post will do.</p>
       <h3>How do I pay?</h3>
-      <p>Choose Buy now on a single post. Fill in your name, email, business name, the post copy and your preferred dates, and agree to the conditions. Then you pay with PayPal. We'll review the post against the group rules before it goes live. Preferred dates are a request, not a guarantee. If we can't run the post, you'll get a full refund of what you paid. For a question, or for monthly Bronze, Silver or Gold sponsorship, email us. We don't take calls.</p>
+      <p>Choose Buy now on a single post. Fill in your name, email, business name, the post copy and your preferred dates, and agree to the conditions. Pay now emails the form to us, then you pay with PayPal. Send for review first emails the form to us and does not take you to pay. We'll review the post against the group rules and email you if it's approved, with how to pay. If we can't run it, we'll let you know and you won't be charged. Preferred dates are a request, not a guarantee. If you've already paid and we can't run the post, you'll get a full refund of what you paid. For a question, or for monthly Bronze, Silver or Gold sponsorship, email us. We don't take calls.</p>
       <h3>Can I advertise anything?</h3>
       <p>No. We don't accept scams, get-rich-quick offers or misleading claims, and we can decline any ad.</p>
     </section>
@@ -365,10 +367,15 @@ footer .wrap.legal{display:block}
   </div>
 </footer>
 <dialog id="booking" class="booking" aria-labelledby="booking-title">
+  <div id="booking-thanks" class="thanks" hidden>
+    <h2 id="booking-thanks-title">We'll review it first</h2>
+    <p id="booking-thanks-text"></p>
+    <button type="button" class="btn" id="booking-thanks-close">Close</button>
+  </div>
   <form id="booking-form" method="post" action="https://formsubmit.co/admin@australianbusinessstartup.com.au" accept-charset="UTF-8">
-    <h2 id="booking-title">Buy this post</h2>
+    <h2 id="booking-title">Book this post</h2>
     <p class="chosen" id="booking-chosen"></p>
-    <p>Fill this in and agree to the conditions. We email it to ourselves, then take you to PayPal to pay. Paying does not mean the post will go live.</p>
+    <p>Fill this in and agree to the conditions. Then choose Pay now or Send for review first. Both email the form to us. Only Pay now takes you to PayPal, and paying does not mean the post will go live.</p>
     <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
@@ -377,6 +384,7 @@ footer .wrap.legal{display:block}
     <input type="hidden" name="_next" id="booking-next" value="">
     <input type="hidden" name="Product" id="booking-product" value="">
     <input type="hidden" name="Price" id="booking-price" value="">
+    <input type="hidden" name="How to proceed" id="booking-choice" value="">
     <label for="booking-name">Your name</label>
     <input id="booking-name" name="Name" type="text" autocomplete="name" required maxlength="120">
     <label for="booking-email">Email</label>
@@ -388,7 +396,7 @@ footer .wrap.legal{display:block}
     <label for="booking-dates">Preferred dates</label>
     <input id="booking-dates" name="Preferred dates" type="text" autocomplete="off" required maxlength="200" placeholder="For example, the week of 16 November">
     <div class="conditions" id="booking-conditions">
-      <p><strong>Please read this before you pay</strong></p>
+      <p><strong>Please read this before you continue</strong></p>
       <ul>
         <li>We'll review your post against the Australian Business Startup group rules before it goes live.</li>
         <li>The dates you ask for are a request, not a guarantee.</li>
@@ -400,11 +408,18 @@ footer .wrap.legal{display:block}
       <span>I agree to these conditions.</span>
     </label>
     <p class="form-error" id="booking-error" role="alert" hidden></p>
-    <div class="actions">
-      <button class="btn" type="submit" id="booking-submit">Continue to PayPal</button>
-      <button class="btn secondary" type="button" id="booking-cancel">Cancel</button>
+    <div class="choices">
+      <div>
+        <button class="btn" type="button" id="booking-pay" data-choice="pay">Pay now</button>
+        <p class="choice-note">We email this form, then you pay on PayPal.</p>
+      </div>
+      <div>
+        <button class="btn" type="button" id="booking-review" data-choice="review">Send for review first</button>
+        <p class="choice-note">We email this form and review it. You don't pay unless we approve it.</p>
+      </div>
     </div>
-    <p class="fine">We email this form to admin@australianbusinessstartup.com.au. Card details are taken on PayPal, not on this page. You haven't paid until you finish on PayPal.</p>
+    <button type="button" class="text-cancel" id="booking-cancel">Cancel</button>
+    <p class="fine">Both choices email this form to admin@australianbusinessstartup.com.au. Card details are taken on PayPal, not on this page. Pay now is the only choice that takes you to pay.</p>
   </form>
 </dialog>
 <script>
@@ -435,8 +450,25 @@ footer .wrap.legal{display:block}
   var form = document.getElementById("booking-form");
   var chosen = document.getElementById("booking-chosen");
   var error = document.getElementById("booking-error");
-  var submitBtn = document.getElementById("booking-submit");
+  var thanks = document.getElementById("booking-thanks");
+  var payBtn = document.getElementById("booking-pay");
+  var reviewBtn = document.getElementById("booking-review");
   var fields = ["booking-name", "booking-email", "booking-business", "booking-copy", "booking-dates"];
+
+  function showForm() {
+    form.hidden = false;
+    thanks.hidden = true;
+    dialog.setAttribute("aria-labelledby", "booking-title");
+  }
+  function showThanks(saved) {
+    var email = saved && saved.email ? saved.email : "the email address you gave us";
+    var product = saved && saved.product ? saved.product : "your post";
+    document.getElementById("booking-thanks-text").textContent = "Thanks. We've emailed " + product + " for review. We'll check it against the group rules and email " + email + " if it's approved, with how to pay. If we can't run it, we'll let you know. You won't be charged.";
+    form.hidden = true;
+    thanks.hidden = false;
+    dialog.setAttribute("aria-labelledby", "booking-thanks-title");
+    if (!dialog.open) dialog.showModal();
+  }
 
   function showError(message) {
     error.hidden = false;
@@ -456,9 +488,12 @@ footer .wrap.legal{display:block}
       var product = PRODUCTS[key];
       if (!product) return;
       form.dataset.product = key;
+      delete form.dataset.choice;
       chosen.textContent = product.label + " (" + product.price + ")";
       clearError();
-      submitBtn.disabled = false;
+      payBtn.disabled = false;
+      reviewBtn.disabled = false;
+      showForm();
       dialog.showModal();
       document.getElementById("booking-name").focus();
     });
@@ -471,9 +506,20 @@ footer .wrap.legal{display:block}
     if (e.target === dialog) dialog.close();
   });
   dialog.addEventListener("close", function () {
-    submitBtn.disabled = false;
+    payBtn.disabled = false;
+    reviewBtn.disabled = false;
     clearError();
+    showForm();
   });
+  document.getElementById("booking-thanks-close").addEventListener("click", function () {
+    dialog.close();
+  });
+  function begin(choice) {
+    form.dataset.choice = choice;
+    if (typeof form.requestSubmit === "function") form.requestSubmit();
+  }
+  payBtn.addEventListener("click", function () { begin("pay"); });
+  reviewBtn.addEventListener("click", function () { begin("review"); });
   fields.forEach(function (id) {
     document.getElementById(id).addEventListener("input", function () {
       this.setCustomValidity("");
@@ -505,13 +551,14 @@ footer .wrap.legal{display:block}
     }
     if (honey && honey.value) {
       e.preventDefault();
-      showError("We couldn't send your booking, so you haven't been taken to pay. Please email us instead.");
+      showError("We couldn't send your booking. Nothing has been paid. Please email us instead.");
       return;
     }
     var product = PRODUCTS[form.dataset.product];
-    if (!product) {
+    var choice = form.dataset.choice;
+    if (!product || (choice !== "pay" && choice !== "review")) {
       e.preventDefault();
-      showError("Choose a post with Buy now, then fill in this form.");
+      showError("Choose Pay now or Send for review first.");
       return;
     }
     name.value = name.value.trim();
@@ -521,11 +568,41 @@ footer .wrap.legal{display:block}
     dates.value = dates.value.trim();
     document.getElementById("booking-product").value = product.label;
     document.getElementById("booking-price").value = product.price;
-    document.getElementById("booking-subject").value = "Advertising booking: " + product.label + " (" + product.price + ")";
     document.getElementById("booking-replyto").value = email.value;
-    document.getElementById("booking-next").value = product.paypal;
-    setTimeout(function () { submitBtn.disabled = true; }, 0);
+    if (choice === "review") {
+      document.getElementById("booking-choice").value = "Send for review first";
+      document.getElementById("booking-subject").value = "Advertising booking (review first): " + product.label + " (" + product.price + ")";
+      var back = new URL(location.href);
+      back.searchParams.set("sent", "review");
+      back.hash = "";
+      document.getElementById("booking-next").value = back.toString();
+      try {
+        sessionStorage.setItem("abs_booking_review", JSON.stringify({
+          email: email.value,
+          product: product.label
+        }));
+      } catch (err) {}
+    } else {
+      document.getElementById("booking-choice").value = "Pay now";
+      document.getElementById("booking-subject").value = "Advertising booking (pay now): " + product.label + " (" + product.price + ")";
+      document.getElementById("booking-next").value = product.paypal;
+      try { sessionStorage.removeItem("abs_booking_review"); } catch (err) {}
+    }
+    setTimeout(function () {
+      payBtn.disabled = true;
+      reviewBtn.disabled = true;
+    }, 0);
   });
+
+  if (new URLSearchParams(location.search).get("sent") === "review") {
+    var saved = null;
+    try { saved = JSON.parse(sessionStorage.getItem("abs_booking_review") || "null"); } catch (err) {}
+    try { sessionStorage.removeItem("abs_booking_review"); } catch (err) {}
+    showThanks(saved);
+    if (window.history && history.replaceState) {
+      history.replaceState({}, "", location.pathname + location.hash);
+    }
+  }
 })();
 </script>
 </body>
