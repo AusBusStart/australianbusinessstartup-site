@@ -65,7 +65,7 @@
       "name": "Advertise with us",
       "description": "Advertise to Australian small business owners in our Facebook group (80,712 members). Sponsored posts from $50 inc GST.",
       "inLanguage": "en-AU",
-      "dateModified": "2026-11-08",
+      "dateModified": "2026-11-10",
       "isPartOf": {
         "@id": "https://australianbusinessstartup.com.au/#website"
       },
@@ -96,7 +96,7 @@
           "name": "How much does it cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A sponsored post in the group is $50 inc GST. A sponsored post pinned to the top of the group for 7 days is $100 inc GST. A paid job post is $50 inc GST. A Member Spotlight is $100 inc GST. Monthly sponsorship packages are available in Bronze, Silver and Gold options."
+            "text": "A sponsored post in the group is $50 inc GST. A sponsored post pinned to the top of the group for 7 days is $100 inc GST. A premium pin is $150 inc GST (7 days at the top, plus a Promo Friday shout-out and a mention in our newsletter). A paid job post is $50 inc GST. A Member Spotlight is $100 inc GST. Monthly sponsorship packages are available in Bronze, Silver and Gold options."
           }
         },
         {
@@ -247,7 +247,7 @@ footer .wrap.legal{display:block}
     <span class="eyebrow">Facebook group, website and newsletter</span>
     <h1>Advertise with us</h1>
     <p class="lead">A straightforward way to reach Australian small business owners, founders and freelancers. Prices are inc GST. For a single post, choose Buy now, fill in the form and agree to the conditions. You can pay with PayPal, or send the post for review first.</p>
-    <p class="updated">Last updated <time datetime="2026-11-08">8 November 2026</time></p>
+    <p class="updated">Last updated <time datetime="2026-11-10">10 November 2026</time></p>
   </div>
 </div>
 <main>
@@ -274,6 +274,11 @@ footer .wrap.legal{display:block}
           <h3>Sponsored post, pinned for 7 days <span class="price">$100 inc GST</span></h3>
           <p>A sponsored post pinned to the top of the group for 7 days.</p>
           <p><button type="button" class="btn" data-buy="pinned">Buy now</button></p>
+        </article>
+        <article class="card">
+          <h3>Premium pin <span class="price">$150 inc GST</span></h3>
+          <p>7 days at the top, plus a Promo Friday shout-out and a mention in our newsletter.</p>
+          <p><button type="button" class="btn" data-buy="premium">Buy now</button></p>
         </article>
         <article class="card">
           <h3>Paid job post <span class="price">$50 inc GST</span></h3>
@@ -324,7 +329,7 @@ footer .wrap.legal{display:block}
     <section class="block" id="faq">
       <h2>Common questions</h2>
       <h3>How much does it cost?</h3>
-      <p>A sponsored post in the group is $50 inc GST. A sponsored post pinned to the top of the group for 7 days is $100 inc GST. A paid job post is $50 inc GST. A Member Spotlight is $100 inc GST. Monthly sponsorship packages are available in Bronze, Silver and Gold options.</p>
+      <p>A sponsored post in the group is $50 inc GST. A sponsored post pinned to the top of the group for 7 days is $100 inc GST. A premium pin is $150 inc GST (7 days at the top, plus a Promo Friday shout-out and a mention in our newsletter). A paid job post is $50 inc GST. A Member Spotlight is $100 inc GST. Monthly sponsorship packages are available in Bronze, Silver and Gold options.</p>
       <h3>Are ads labelled?</h3>
       <p>Yes. Every paid post is clearly labelled "Sponsored". A paid job post is also labelled as a paid job post.</p>
       <h3>Do you guarantee results?</h3>
@@ -434,6 +439,12 @@ footer .wrap.legal{display:block}
       label: "Sponsored post, pinned for 7 days",
       price: "$100 inc GST",
       paypal: "https://www.paypal.com/ncp/payment/CA73HK4RHHA2E"
+    },
+    premium: {
+      label: "Premium pin",
+      price: "$150 inc GST",
+      // Paste the PayPal payment link for AUD 150.00 (inc GST) here before this goes live.
+      paypal: "https://www.paypal.com/ncp/payment/REPLACE_WITH_150_BUTTON_ID"
     },
     job: {
       label: "Paid job post",
@@ -582,6 +593,10 @@ footer .wrap.legal{display:block}
           product: product.label
         }));
       } catch (err) {}
+    } else if (product.paypal.indexOf("REPLACE_WITH") !== -1) {
+      e.preventDefault();
+      showError("PayPal isn't set up for this post yet. Nothing has been sent or paid. Please email us, or choose Send for review first.");
+      return;
     } else {
       document.getElementById("booking-choice").value = "Pay now";
       document.getElementById("booking-subject").value = "Advertising booking (pay now): " + product.label + " (" + product.price + ")";
