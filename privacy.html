@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add("js");</script>
 <title>Privacy policy | Australian Business Startup</title>
 <meta name="description" content="How Australian Business Startup (Enviga Pty Ltd) collects, uses and protects your personal information.">
 <link rel="canonical" href="https://australianbusinessstartup.com.au/privacy.html">
@@ -41,10 +42,34 @@
   footer{background:#0f1c24;color:#b7c4cc;padding:28px 0;font-size:.88rem}
   footer a{color:#e3edf2}
   footer p{margin:0 0 8px}
+
+.menu-toggle{display:none;align-items:center;justify-content:center;width:44px;height:44px;margin:0;padding:0;border:0;border-radius:10px;background:transparent;color:var(--navy,#0b4f6c);font-size:1.45rem;line-height:1;cursor:pointer;flex:none}
+.menu-toggle:hover{background:var(--soft,#f4f7f9)}
+.menu-toggle:focus-visible{outline:3px solid #cfe3ee;outline-offset:2px}
+@media screen and (max-width:860px){
+  html.js .menu-toggle{display:inline-flex}
+  header.top,header{position:relative;z-index:40}
+  header.top .wrap,header .wrap{height:auto;min-height:64px}
+  html.js .brand{flex:1 1 auto;min-width:0}
+  html.js .logo{flex:none}
+  html.js .brand-name{min-width:0}
+  html.js header.top .wrap,html.js header .wrap{gap:8px}
+  header nav[aria-label="Main"]{display:none;flex-direction:column;margin:0;padding:6px 0 8px;background:#fff;border-bottom:1px solid var(--line,#dfe6eb);box-shadow:0 12px 28px rgba(8,58,80,.12)}
+  header nav[aria-label="Main"] a{display:flex;align-items:center;box-sizing:border-box;min-height:44px;margin:0;padding:0 22px}
+  header nav[aria-label="Main"] a[aria-current="page"]{color:var(--navy,#0b4f6c);background:var(--soft,#f4f7f9);font-weight:700}
+  html.js header nav[aria-label="Main"]{position:absolute;left:0;right:0;top:100%}
+  html.js header nav[aria-label="Main"].is-open{display:flex}
+  html:not(.js) header .wrap{flex-wrap:wrap}
+  html:not(.js) header nav[aria-label="Main"]{display:flex;flex:1 0 100%;box-shadow:none;border-top:1px solid var(--line,#dfe6eb)}
+  html:not(.js) header nav[aria-label="Main"] a{padding-left:0;padding-right:0}
+}
+@media screen and (max-width:420px){
+  html.js .brand{font-size:.98rem}
+}
 </style>
 </head>
 <body>
-<header><div class="wrap"><a class="brand" href="index.html"><span class="logo">ABS</span>Australian Business Startup</a><nav aria-label="Main"><a href="about.html">About</a><a href="guides/">Guides</a><a href="show.html">The Show</a><a href="tools.html">Tools</a><a href="scam-watch-summary.html">Scam Watch</a><a href="/#signup">Sign up</a></nav></div></header>
+<header><div class="wrap"><a class="brand" href="index.html"><span class="logo">ABS</span><span class="brand-name">Australian Business Startup</span></a><button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">☰</button><nav id="site-nav" aria-label="Main"><a href="about.html">About</a><a href="guides/">Guides</a><a href="show.html">The Show</a><a href="tools.html">Tools</a><a href="scam-watch-summary.html">Scam Watch</a><a href="/#signup">Sign up</a></nav></div></header>
 <main>
 <div class="wrap">
 
@@ -103,5 +128,20 @@ Post: Enviga Pty Ltd, PO Box 58, Burleigh Heads QLD 4220, Australia</p>
 </div>
 </main>
 <footer><div class="wrap"><p><a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="guides/">Guides</a> &middot; <a href="show.html">The Show</a> &middot; <a href="tools.html">Tools</a> &middot; <a href="scam-watch-summary.html">Scam Watch</a> &middot; <a href="advertise.html">Advertise with us</a> &middot; <a href="/#signup">Newsletter sign-up</a></p><p>Australian Business Startup is a registered business name of Enviga Pty Ltd (ABN 43 115 695 568).</p><p>&copy; 2026 Enviga Pty Ltd (ABN 43 115 695 568) &middot; <a href="mailto:admin@australianbusinessstartup.com.au">admin@australianbusinessstartup.com.au</a> &middot; PO Box 58, Burleigh Heads QLD 4220</p></div></footer>
+<script>
+(function(){
+  var btn=document.querySelector(".menu-toggle");
+  if(!btn)return;
+  var nav=document.getElementById(btn.getAttribute("aria-controls"));
+  if(!nav)return;
+  function setOpen(open){
+    nav.classList.toggle("is-open",open);
+    btn.setAttribute("aria-expanded",open?"true":"false");
+  }
+  btn.addEventListener("click",function(){setOpen(btn.getAttribute("aria-expanded")!=="true");});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")setOpen(false);});
+  nav.addEventListener("click",function(e){if(e.target.closest&&e.target.closest("a"))setOpen(false);});
+})();
+</script>
 </body>
 </html>
