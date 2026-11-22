@@ -97,7 +97,7 @@
           "name": "How much does it cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A sponsored post in the group is $55 inc GST. A sponsored post pinned to the top of the group for 7 days is $110 inc GST. A paid job post is $55 inc GST. A Member Spotlight is $110 inc GST. A sponsored website article is $220 inc GST per article, or $192.50 inc GST each for a regular monthly order of 3 or more. Monthly sponsorship packages are available in Bronze, Silver and Gold options. All prices include GST."
+            "text": "A sponsored post in the group is $55 inc GST. A sponsored post pinned to the top of the group for 7 days is $110 inc GST. A paid job post is $55 inc GST. It is for Australian businesses with an ABN. The role must show a pay rate or range, and commission-only roles aren't accepted. It is labelled as a paid job post, and it stays up for at least 30 days. A Member Spotlight is $110 inc GST. A sponsored website article is $220 inc GST per article, or $192.50 inc GST each for a regular monthly order of 3 or more. Monthly sponsorship packages are available in Bronze, Silver and Gold options. All prices include GST."
           }
         },
         {
@@ -312,7 +312,7 @@ footer .wrap.legal{display:block}
         </article>
         <article class="card">
           <h3>Paid job post <span class="price">$55 inc GST</span></h3>
-          <p>Labelled as a paid job post, and it stays up for at least 30 days.</p>
+          <p>For Australian businesses with an ABN. The role must show a pay rate or range, and commission-only roles aren't accepted. Labelled as a paid job post, and it stays up for at least 30 days.</p>
           <p><button type="button" class="btn" data-buy="job">Buy now</button></p>
         </article>
         <article class="card">
@@ -375,7 +375,7 @@ footer .wrap.legal{display:block}
     <section class="block" id="faq">
       <h2>Common questions</h2>
       <h3>How much does it cost?</h3>
-      <p>A sponsored post in the group is $55 inc GST. A sponsored post pinned to the top of the group for 7 days is $110 inc GST. A paid job post is $55 inc GST. A Member Spotlight is $110 inc GST. A sponsored website article is $220 inc GST per article, or $192.50 inc GST each for a regular monthly order of 3 or more. Monthly sponsorship packages are available in Bronze, Silver and Gold options. All prices include GST.</p>
+      <p>A sponsored post in the group is $55 inc GST. A sponsored post pinned to the top of the group for 7 days is $110 inc GST. A paid job post is $55 inc GST. It is for Australian businesses with an ABN. The role must show a pay rate or range, and commission-only roles aren't accepted. It is labelled as a paid job post, and it stays up for at least 30 days. A Member Spotlight is $110 inc GST. A sponsored website article is $220 inc GST per article, or $192.50 inc GST each for a regular monthly order of 3 or more. Monthly sponsorship packages are available in Bronze, Silver and Gold options. All prices include GST.</p>
       <h3>Are ads labelled?</h3>
       <p>Yes. Every paid post is clearly labelled "Sponsored". A paid job post is also labelled as a paid job post.</p>
       <h3>Do you guarantee results?</h3>
@@ -453,6 +453,7 @@ footer .wrap.legal{display:block}
       <p><strong>Please read this before you continue</strong></p>
       <ul>
         <li>We'll review your post against the Australian Business Startup group rules before it goes live.</li>
+        <li id="booking-job-rule" hidden>For Australian businesses with an ABN. The role must show a pay rate or range, and commission-only roles aren't accepted. Labelled as a paid job post, and it stays up for at least 30 days.</li>
         <li>The dates you ask for are a request, not a guarantee.</li>
         <li>If we can't run the post, you'll get a full refund of what you paid.</li>
       </ul>
@@ -544,6 +545,12 @@ footer .wrap.legal{display:block}
       form.dataset.product = key;
       delete form.dataset.choice;
       chosen.textContent = product.label + " (" + product.price + ")";
+      var jobRule = document.getElementById("booking-job-rule");
+      var agree = document.getElementById("booking-agree");
+      var jobTerms = " For Australian businesses with an ABN. The role must show a pay rate or range, and commission-only roles aren't accepted. Labelled as a paid job post, and it stays up for at least 30 days.";
+      if (!agree.dataset.baseValue) agree.dataset.baseValue = agree.value;
+      jobRule.hidden = key !== "job";
+      agree.value = key === "job" ? agree.dataset.baseValue + jobTerms : agree.dataset.baseValue;
       clearError();
       payBtn.disabled = false;
       reviewBtn.disabled = false;
