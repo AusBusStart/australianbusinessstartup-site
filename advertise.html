@@ -388,7 +388,7 @@ footer .wrap.legal{display:block}
       <p>A sponsored website article is 1,000 or more words, with up to 2 links. It is $220 inc GST per article, or $192.50 inc GST each for a regular monthly order of 3 or more. Every article is labelled as sponsored, and the links use rel="sponsored". We do not sell dofollow links. The content is original and useful to Australian small business owners and founders. We approve it before publishing and may request edits. We publish within 5 business days of approval and payment. You pay by invoice (bank transfer or PayPal) before we publish. We do not insert links into existing articles. We do not accept gambling, crypto, payday or short-term loans, adult content, or misleading content. Links must go to legitimate business sites, and the end client must be disclosed. Email us to book.</p>
     </section>
 
-    <div class="disclaimer"><p><em>All prices include GST. Advertising is separate from the guides, which are general information and not advice.</em></p></div>
+    <div class="disclaimer"><p><em>All prices include GST. Advertising is separate from the guides, which are general information and not advice.</em></p><p><a href="/advertising-terms.html">Advertising Terms</a></p></div>
   </div>
 </main>
 <footer>
@@ -412,6 +412,7 @@ footer .wrap.legal{display:block}
       <p><a href="/tools.html">Tools we recommend</a></p>
       <p><a href="/scam-watch-summary.html">Scam Watch</a></p>
       <p><a href="/advertise.html">Advertise with us</a></p>
+      <p><a href="/advertising-terms.html">Advertising Terms</a></p>
       <p><a href="/privacy.html">Privacy policy</a></p>
       <p><a href="/#signup">Newsletter sign-up</a></p>
     </div>
@@ -461,6 +462,10 @@ footer .wrap.legal{display:block}
     <label class="agree" for="booking-agree">
       <input id="booking-agree" name="Agreed to conditions" type="checkbox" value="Yes. The post will be reviewed against the Australian Business Startup group rules before it goes live. Preferred dates are a request, not a guarantee. If the post cannot be run, I will receive a full refund of what I paid." required aria-describedby="booking-conditions">
       <span>I agree to these conditions.</span>
+    </label>
+    <label class="agree" for="booking-terms">
+      <input id="booking-terms" name="Agreed to Advertising Terms" type="checkbox" value="Yes. I agree to the Advertising Terms." required>
+      <span>I agree to the <a href="/advertising-terms.html" target="_blank" rel="noopener">Advertising Terms</a></span>
     </label>
     <p class="form-error" id="booking-error" role="alert" hidden></p>
     <div class="choices">
@@ -589,6 +594,9 @@ footer .wrap.legal{display:block}
   document.getElementById("booking-agree").addEventListener("change", function () {
     this.setCustomValidity("");
   });
+  document.getElementById("booking-terms").addEventListener("change", function () {
+    this.setCustomValidity("");
+  });
 
   form.addEventListener("submit", function (e) {
     clearError();
@@ -598,6 +606,7 @@ footer .wrap.legal{display:block}
     var copy = document.getElementById("booking-copy");
     var dates = document.getElementById("booking-dates");
     var agree = document.getElementById("booking-agree");
+    var terms = document.getElementById("booking-terms");
     var honey = form.querySelector('[name="_honey"]');
     requireText(name, "Please add your name.");
     requireText(email, "Please add your email.");
@@ -605,6 +614,7 @@ footer .wrap.legal{display:block}
     requireText(copy, "Please add the post copy.");
     requireText(dates, "Please add your preferred dates.");
     agree.setCustomValidity(agree.checked ? "" : "Please tick the box to agree to the conditions.");
+    terms.setCustomValidity(terms.checked ? "" : "Please tick the box to agree to the Advertising Terms.");
     if (!form.checkValidity()) {
       e.preventDefault();
       form.reportValidity();
