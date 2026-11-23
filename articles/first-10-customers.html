@@ -137,8 +137,12 @@ footer .wrap.legal{display:block}
 .want-box h2{font-size:1.35rem;margin:0 0 8px}
 .want-box p{margin:0 0 14px}
 .want-box p:last-child{margin-bottom:0}
+.want-box .buy-row{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 14px}
+.want-box .buy-row .btn{margin:0}
+.want-box .invoice-link{font-size:.95rem}
 @media screen and (max-width:520px){
   .want-box{padding:22px 18px}
+  .want-box .buy-row{flex-direction:column}
 }
 </style>
 <script type="application/ld+json">
@@ -264,8 +268,12 @@ footer .wrap.legal{display:block}
     </div>
     <aside class="want-box">
       <h2>Want an article like this?</h2>
-      <p>A sponsored website article is $220 inc GST ($192.50 inc GST each for 3 or more in a month). A Boosted sponsored article is $330 inc GST and adds one labelled group post, one newsletter mention and a 7-day reach and engagement report.</p>
-      <p><a class="btn" href="/advertise.html">Advertise with us</a></p>
+      <p>A sponsored website article is $220 inc GST ($192.50 inc GST each for 3 or more in a month, by email). A Boosted sponsored article is $330 inc GST and adds one labelled group post, one newsletter mention and a 7-day reach and engagement report.</p>
+      <p class="buy-row">
+        <a class="btn" href="https://www.paypal.com/ncp/payment/B5D548J4C97CS">Buy now · $220 inc GST</a>
+        <a class="btn" href="https://www.paypal.com/ncp/payment/XWTBB6Q2NAJ6W">Buy now · $330 inc GST</a>
+      </p>
+      <p class="invoice-link"><a href="mailto:admin@australianbusinessstartup.com.au?subject=Sponsored%20website%20article">or email us for an invoice</a></p>
       <p><a href="/advertising-terms.html">Advertising Terms</a></p>
     </aside>
   </div>
