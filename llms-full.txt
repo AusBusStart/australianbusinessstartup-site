@@ -27,6 +27,16 @@ Show playlist: https://www.youtube.com/playlist?list=PLRSxCGFrfOu8
 YouTube channel: https://www.youtube.com/@AusBusStart
 Sponsorship: email admin@australianbusinessstartup.com.au
 
+## Articles
+
+https://australianbusinessstartup.com.au/articles/
+
+Articles from Australian Business Startup and from sponsored partners. This section is separate from the guides. Paid articles are labelled as sponsored.
+
+Sample article (unpaid, written by Australian Business Startup, no one paid for it): https://australianbusinessstartup.com.au/articles/first-10-customers.html
+
+Title: How to get your first 10 customers without a big ad budget. It is an example of the sponsored article format, not a paid placement. The sponsor line is shown as an empty placeholder. The worked example of a mobile dog groomer in Townsville is fictional and reports no results. The article is general information, not financial, legal or tax advice.
+
 ## How to start a business in Australia
 
 https://australianbusinessstartup.com.au/guides/how-to-start-a-business-in-australia.html
@@ -107,9 +117,9 @@ The longer guide and the PDF are the newsletter email, not a public indexed page
 
 https://australianbusinessstartup.com.au/advertise.html
 
-Advertising Terms (version 22 November 2026): https://australianbusinessstartup.com.au/advertising-terms.html
+Advertising Terms (version 23 November 2026): https://australianbusinessstartup.com.au/advertising-terms.html
 
-Last updated 22 November 2026. Run by Enviga Pty Ltd (ABN 43 115 695 568). The Facebook group had 80,712 members on 7 November 2026. Advertising also sits alongside the website and the email newsletter.
+Last updated 23 November 2026. Run by Enviga Pty Ltd (ABN 43 115 695 568). The Facebook group had 80,712 members on 7 November 2026. Advertising also sits alongside the website and the email newsletter.
 
 All prices include GST.
 
@@ -117,14 +127,15 @@ All prices include GST.
 - Sponsored post pinned to the top of the group for 7 days: $110 inc GST.
 - Paid job post: $55 inc GST. For Australian businesses with an ABN. The role must show a pay rate or range, and commission-only roles aren't accepted. Labelled as a paid job post, and it stays up for at least 30 days.
 - Member Spotlight: $110 inc GST. A short Q&A about the person and their business, labelled Sponsored and pinned for 7 days.
-- Sponsored website article: $220 inc GST per article, or $192.50 inc GST each for a regular monthly order of 3 or more. At least 1,000 words, with up to 2 links. Every article is labelled as sponsored, and links use rel="sponsored". Dofollow links are not sold. The content is original and useful to Australian small business owners and founders, and Australian Business Startup approves it before publishing (edits may be requested). Published within 5 business days of approval and payment. Payment is by invoice (bank transfer or PayPal) before publishing. Links are not inserted into existing articles. Not accepted: gambling, crypto, payday or short-term loans, adult content, or misleading content. Links must go to legitimate business sites, and the end client must be disclosed. Book by email to admin@australianbusinessstartup.com.au. There is no Buy now button for this product.
+- Sponsored website article: $220 inc GST per article. At least 1,000 words, with up to 2 links. Every article is labelled as sponsored, and links use rel="sponsored". Dofollow links are not sold. The content is original and useful to Australian small business owners and founders, and Australian Business Startup approves it before publishing (edits may be requested). Published within 5 business days of approval and payment. Pay now with PayPal, or email admin@australianbusinessstartup.com.au for an invoice. The article is reviewed after payment. Edits may be requested, and the fee is refunded in full if it is declined. Links are not inserted into existing articles. Not accepted: gambling, crypto, payday or short-term loans, adult content, or misleading content. Links must go to legitimate business sites, and the end client must be disclosed. Buy now: https://www.paypal.com/ncp/payment/B5D548J4C97CS. An unpaid sample is at https://australianbusinessstartup.com.au/articles/first-10-customers.html.
+- Boosted sponsored website article: $330 inc GST. Everything in a sponsored website article, plus one sponsored Facebook group post linking to the article (labelled "Sponsored: [your business]", with key takeaways and a read-more link; not pinned; no @everyone tag), one mention in the next email newsletter (labelled "Sponsored by [your business]"), and a group reach and engagement report about 7 days after the post. The dates for the group post and the newsletter mention are scheduled by Australian Business Startup. Pay now with PayPal, or email for an invoice. The article is reviewed after payment, and the fee is refunded in full if it is declined. Buy now: https://www.paypal.com/ncp/payment/XWTBB6Q2NAJ6W.
 - Monthly sponsorship packages are available in Bronze, Silver and Gold options. All prices include GST. Email for what's included in each level and the price.
 
 Example reach from single posts, not a guarantee: the group welcome post reached 2,088 people, with 30 reactions and 16 comments. The paid job post announcement reached 845 people. The weekly Promo Friday thread typically reaches about 750 to 900 people. In the 28 days to 30 October 2026, group posts were viewed by 35,606 people.
 
 Every paid post is labelled "Sponsored". Sponsored posts are limited to a few a week. Scams, get-rich-quick offers and misleading claims are not accepted, and any ad can be declined. About a week after a post goes up, the advertiser is emailed its reach, reactions, comments and link clicks.
 
-For a single post, choose Buy now, fill in the form (name, email, business name, post copy and preferred dates) and agree to the conditions. Pay now emails the form to admin@australianbusinessstartup.com.au, then the person pays with PayPal. Send for review first emails the same form and does not take them to pay. The post is reviewed against the group rules. If it is approved, they are emailed how to pay. If it cannot be run, they are told and are not charged. Preferred dates are a request, not a guarantee. If a paid post cannot be run, the amount paid is refunded in full. A sponsored website article is booked by email. It is invoiced, and paid by bank transfer or PayPal, before publishing. Questions, and monthly Bronze, Silver and Gold sponsorship, are by email. There are no calls.
+For a single post, choose Buy now, fill in the form (name, email, business name, post copy and preferred dates) and agree to the conditions. Pay now emails the form to admin@australianbusinessstartup.com.au, then the person pays with PayPal. Send for review first emails the same form and does not take them to pay. The post is reviewed against the group rules. If it is approved, they are emailed how to pay. If it cannot be run, they are told and are not charged. Preferred dates are a request, not a guarantee. If a paid post cannot be run, the amount paid is refunded in full. A sponsored website article or a Boosted sponsored website article can be booked with Buy now. Pay now emails the form, then the person pays with PayPal. Or they email for an invoice. The article is reviewed after payment. The dates for its group post and newsletter mention are scheduled by Australian Business Startup. Questions, and monthly Bronze, Silver and Gold sponsorship, are by email. There are no calls.
 
 ## Tools and privacy
 
