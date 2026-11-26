@@ -14,3 +14,4 @@
 # After a link has been posted, do not edit its destination. Retire it instead.
 
 example https://australianbusinessstartup.com.au/ active
+scamwatch https://australianbusinessstartup.com.au/#signup active
