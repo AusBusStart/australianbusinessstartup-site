@@ -1,0 +1,21 @@
+name = "abs-go"
+main = "worker.mjs"
+compatibility_date = "2026-11-26"
+
+# The whole hostname is this Worker. The main website stays on GitHub Pages.
+[[routes]]
+pattern = "go.australianbusinessstartup.com.au"
+custom_domain = true
+
+[vars]
+# Steady state is main. The README explains a one-off branch address for the deploy that happens before this pull request is merged. Do not commit that temporary address.
+LINKS_URL = "https://raw.githubusercontent.com/AusBusStart/australianbusinessstartup-site/main/go-redirect/links.txt"
+
+# One point per click. The report reads it back with the SQL binding below.
+[[analytics_engine_datasets]]
+binding = "CLICKS"
+dataset = "abs_link_clicks"
+
+# Wrangler 4.145.0 or newer. No API token: the binding is limited to this account.
+[analytics]
+binding = "ANALYTICS_SQL"

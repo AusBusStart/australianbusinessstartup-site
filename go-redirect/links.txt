@@ -1,0 +1,16 @@
+# Tracked links. One link is one line. Do not change a destination after you have posted the link.
+#
+#   slug  https://destination/  active
+#   slug  https://destination/  retired
+#   slug  https://destination/  until 2026-12-31
+#
+# slug uses lowercase letters, numbers and hyphens. It is the campaign name.
+# active sends people to the destination and counts the click.
+# retired sends people to the homepage and does not count the click. Use it when a campaign ends.
+# until YYYY-MM-DD works on that date (Brisbane time) and sends people to the homepage from the next day.
+# The destination must start with https://. The link you post is only:
+#   https://go.australianbusinessstartup.com.au/slug
+#
+# After a link has been posted, do not edit its destination. Retire it instead.
+
+example https://australianbusinessstartup.com.au/ active
