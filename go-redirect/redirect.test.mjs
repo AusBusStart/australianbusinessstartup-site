@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { createServer } from "node:http";
 import test from "node:test";
+import { CLICK_REPORT_SQL } from "./worker.mjs";
 import {
   brisbaneDate,
   handleRequest,
@@ -272,6 +274,14 @@ test("the report key is stored in a cookie and removed from the address", async 
   assert.match(first.response.headers.get("set-cookie"), /abs_report=report-secret/);
   const wrong = await go("/_report?key=nope");
   assert.equal(wrong.response.status, 404);
+});
+
+test("every report query uses FROM abs_link_clicks", () => {
+  const source = readFileSync(new URL("./worker.mjs", import.meta.url), "utf8");
+  const fromClauses = [...source.matchAll(/\bFROM\s+(\S+)/g)].map((match) => match[1]);
+  assert.deepEqual(fromClauses, ["abs_link_clicks"]);
+  assert.match(CLICK_REPORT_SQL, /\bFROM abs_link_clicks\b/);
+  for (const clause of fromClauses) assert.equal(clause.includes("."), false);
 });
 
 test("analytics rows are read from the query result without storing an IP", () => {

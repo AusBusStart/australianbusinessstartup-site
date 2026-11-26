@@ -35,18 +35,21 @@ function recordClick(env, event) {
   });
 }
 
+// The table name is the dataset on its own. A dotted name is rejected.
+export const CLICK_REPORT_SQL = `
+  SELECT blob1 AS slug, blob2 AS kind, blob3 AS day, SUM(_sample_interval) AS n
+  FROM abs_link_clicks
+  WHERE blob3 >= $from AND blob3 <= $to
+  GROUP BY slug, kind, day
+  ORDER BY slug, day, kind
+`;
+
 async function queryClicks(env, from, to) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(from) || !/^\d{4}-\d{2}-\d{2}$/.test(to)) {
     throw new Error("bad range");
   }
   const result = await env.ANALYTICS_SQL.query({
-    query: `
-      SELECT blob1 AS slug, blob2 AS kind, blob3 AS day, SUM(_sample_interval) AS n
-      FROM events.analyticsEngine."abs_link_clicks"
-      WHERE blob3 >= $from AND blob3 <= $to
-      GROUP BY slug, kind, day
-      ORDER BY slug, day, kind
-    `,
+    query: CLICK_REPORT_SQL,
     params: { from, to },
   });
   return rowsFromAnalytics(result);
