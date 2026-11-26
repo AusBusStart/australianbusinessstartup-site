@@ -483,6 +483,7 @@ export async function handleRequest(request, deps) {
     try {
       rows = await deps.query(range.from, range.to);
     } catch (err) {
+      console.error("click report query failed", err && err.message, err);
       queryError = "The click count could not be read. Try again in a minute. Redirects still work.";
     }
     const summary = { from: range.from, to: range.to, items: summarize(rows, parsed.links) };

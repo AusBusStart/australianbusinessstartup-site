@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { createServer } from "node:http";
 import test from "node:test";
-import { CLICK_REPORT_SQL } from "./worker.mjs";
+import { brisbaneDayUtcEndExclusive, brisbaneDayUtcStart, CLICK_REPORT_SQL, rowsFromBindingResult } from "./worker.mjs";
 import {
   brisbaneDate,
   handleRequest,
@@ -276,12 +276,25 @@ test("the report key is stored in a cookie and removed from the address", async 
   assert.equal(wrong.response.status, 404);
 });
 
-test("every report query uses FROM abs_link_clicks", () => {
+test("every report query uses the Analytics SQL binding table name", () => {
   const source = readFileSync(new URL("./worker.mjs", import.meta.url), "utf8");
   const fromClauses = [...source.matchAll(/\bFROM\s+(\S+)/g)].map((match) => match[1]);
-  assert.deepEqual(fromClauses, ["abs_link_clicks"]);
-  assert.match(CLICK_REPORT_SQL, /\bFROM abs_link_clicks\b/);
-  for (const clause of fromClauses) assert.equal(clause.includes("."), false);
+  assert.deepEqual(fromClauses, ["events.analyticsEngine.abs_link_clicks"]);
+  assert.match(CLICK_REPORT_SQL, /FROM events\.analyticsEngine\.abs_link_clicks\b/);
+});
+
+test("Brisbane day bounds are UTC instants 24 hours apart", () => {
+  assert.equal(brisbaneDayUtcStart("2026-11-26"), "2026-11-25T14:00:00.000Z");
+  assert.equal(brisbaneDayUtcEndExclusive("2026-11-26"), "2026-11-26T14:00:00.000Z");
+});
+
+test("binding rows map blob columns and the SUM field", () => {
+  const rows = rowsFromBindingResult({
+    data: [{ blob1: "acme", blob2: "click", blob3: "2026-11-26", "SUM(sampleInterval)": 4 }],
+  });
+  assert.deepEqual(rows, [{ slug: "acme", kind: "click", day: "2026-11-26", n: 4 }]);
+  assert.deepEqual(rowsFromBindingResult({ data: [] }), []);
+  assert.deepEqual(rowsFromBindingResult({}), []);
 });
 
 test("analytics rows are read from the query result without storing an IP", () => {

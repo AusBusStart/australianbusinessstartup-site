@@ -35,14 +35,38 @@ function recordClick(env, event) {
   });
 }
 
-// The table name is the dataset on its own. A dotted name is rejected.
+// Binding table name/columns differ from legacy WAE HTTP SQL API; no SELECT aliases allowed; time window must be on timestamp in SQL, request-level time_range not accepted.
 export const CLICK_REPORT_SQL = `
-  SELECT blob1 AS slug, blob2 AS kind, blob3 AS day, SUM(_sample_interval) AS n
-  FROM abs_link_clicks
-  WHERE blob3 >= $from AND blob3 <= $to
-  GROUP BY slug, kind, day
-  ORDER BY slug, day, kind
+  SELECT blob1, blob2, blob3, SUM(sampleInterval)
+  FROM events.analyticsEngine.abs_link_clicks
+  WHERE timestamp >= $start AND timestamp < $end
+    AND blob3 >= $from AND blob3 <= $to
+  GROUP BY blob1, blob2, blob3
+  ORDER BY blob1, blob3, blob2
 `;
+
+export function brisbaneDayUtcStart(isoDay) {
+  return new Date(`${isoDay}T00:00:00+10:00`).toISOString();
+}
+
+export function brisbaneDayUtcEndExclusive(isoDay) {
+  const start = new Date(brisbaneDayUtcStart(isoDay));
+  return new Date(start.getTime() + 24 * 60 * 60 * 1000).toISOString();
+}
+
+export function rowsFromBindingResult(result) {
+  const source = result && Array.isArray(result.data) ? result.data : [];
+  const data = source.map((row) => {
+    const sumKey = Object.keys(row).find((key) => key !== "blob1" && key !== "blob2" && key !== "blob3");
+    return {
+      slug: row.blob1,
+      kind: row.blob2,
+      day: row.blob3,
+      n: sumKey === undefined ? undefined : row[sumKey],
+    };
+  });
+  return rowsFromAnalytics({ data });
+}
 
 async function queryClicks(env, from, to) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(from) || !/^\d{4}-\d{2}-\d{2}$/.test(to)) {
@@ -50,9 +74,14 @@ async function queryClicks(env, from, to) {
   }
   const result = await env.ANALYTICS_SQL.query({
     query: CLICK_REPORT_SQL,
-    params: { from, to },
+    params: {
+      from,
+      to,
+      start: brisbaneDayUtcStart(from),
+      end: brisbaneDayUtcEndExclusive(to),
+    },
   });
-  return rowsFromAnalytics(result);
+  return rowsFromBindingResult(result);
 }
 
 export default {
